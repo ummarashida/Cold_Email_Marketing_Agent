@@ -59,7 +59,30 @@ Companies smaller than this can still be reviewed, but they may be a lower prior
 
 ---
 
-## 04. Good ICP Industries
+## 04. Target Geography
+
+Our target geography for ICP analysis is:
+
+```text
+USA
+UK
+Canada
+```
+
+Priority should be given to companies located in, operating in, or selling primarily to these markets.
+
+If the company location is outside the USA, UK, or Canada, it can still be reviewed, but it should be treated as a lower priority unless it shows a very strong fit for Accord Tech Solutions services.
+
+If the company geography is not clear, mark it as:
+
+```text
+Unknown
+Needs Manual Review
+```
+
+---
+
+## 05. Good ICP Industries
 
 The following industries should be considered strong ICP categories:
 
@@ -94,7 +117,7 @@ These industries are relevant because they often need:
 
 ---
 
-## 05. Target Business Type
+## 06. Target Business Type
 
 For each company, classify the business type as:
 
@@ -118,7 +141,7 @@ B2C companies can also be a fit if they need email marketing, customer retention
 
 ---
 
-## 06. Tech / Non-Tech Classification
+## 07. Tech / Non-Tech Classification
 
 Classify each company as:
 
@@ -151,7 +174,7 @@ Examples:
 
 ---
 
-## 07. Portfolio-Based Companies
+## 08. Portfolio-Based Companies
 
 Companies that have portfolio-based services can be a good fit.
 
@@ -176,7 +199,7 @@ Possible pain points:
 
 ---
 
-## 08. CRM / Item Listing Related ICP
+## 09. CRM / Item Listing Related ICP
 
 Companies that use CRM, item listing, product listing, proposal management, or project management systems can also be a strong fit.
 
@@ -212,11 +235,12 @@ Cold Email Outreach
 
 ---
 
-## 09. Good ICP Signals
+## 10. Good ICP Signals
 
 A company should be considered a good ICP if it has one or more of these signals:
 
 - 50-200 employees
+- Located in or targeting the USA, UK, or Canada
 - B2B or both B2B/B2C business model
 - Has a sales team
 - Has a marketing team
@@ -233,10 +257,11 @@ A company should be considered a good ICP if it has one or more of these signals
 
 ---
 
-## 10. Bad ICP Signals
+## 11. Bad ICP Signals
 
 A company should be considered low priority or not a match if:
 
+- Outside the target geography with no clear USA, UK, or Canada market fit
 - No website found
 - No clear business model
 - No decision-maker found
@@ -250,7 +275,7 @@ A company should be considered low priority or not a match if:
 
 ---
 
-## 11. ICP Match Score
+## 12. ICP Match Score
 
 For each company, assign one ICP match score:
 
@@ -267,6 +292,7 @@ A company is a High Match if:
 
 - It belongs to a relevant industry
 - It has 50-200 employees
+- It is located in or targeting the USA, UK, or Canada
 - It is B2B or both B2B/B2C
 - It likely needs lead generation, cold email, CRM, or email marketing support
 - It has a clear website, LinkedIn page, and decision-makers
@@ -298,7 +324,7 @@ A company is Not a Match if:
 
 ---
 
-## 12. ATS Service Fit
+## 13. ATS Service Fit
 
 Based on ICP analysis, select the best Accord Tech Solutions service for each company.
 
@@ -323,13 +349,14 @@ Choose the most relevant service based on the company's business model, industry
 
 ---
 
-## 13. Final Output Columns
+## 14. Final Output Columns
 
 Add these columns in the final ICP analysis file:
 
 ```text
 Industry
 Company Size
+Geography
 Business Type
 Tech / Non-Tech
 ICP Match
@@ -349,7 +376,7 @@ Remarks
 
 ---
 
-## 14. Final Instruction
+## 15. Final Instruction
 
 Analyze every company carefully.
 
@@ -358,6 +385,7 @@ The goal is to find out whether each company is a good prospect for Accord Tech 
 Do not only classify the company by industry. Also check:
 
 - Company size
+- Geography
 - Business model
 - Sales and marketing team
 - Website quality
