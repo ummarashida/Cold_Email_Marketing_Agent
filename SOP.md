@@ -806,9 +806,11 @@ Current approved files:
 - `SOP.md`
 - `Master.md`
 - `Brand-voice.md`
+- `b2b-cold-email-service-routing.md`
 - `data-enrichment.md`
 - `ICP.md`
 - `campaign-flowchart.md`
+- `positive-response-lead-report-agent.md`
 
 ### Already Covered in Current Files
 
@@ -816,6 +818,7 @@ Current approved files:
 |---|---|---|
 | Full cold email operating process | Covered | `SOP.md` |
 | Overall campaign workflow | Covered | `Master.md`, `campaign-flowchart.md` |
+| B2B cold email service positioning and routing | Covered | `b2b-cold-email-service-routing.md`, `Master.md` |
 | Data cleaning and enrichment | Covered | `data-enrichment.md`, `SOP.md` |
 | ICP analysis and scoring | Covered | `ICP.md`, `Master.md`, `SOP.md` |
 | Employee size rule | Covered as 50-200 employees | `SOP.md`, `ICP.md`, `Master.md` |
@@ -828,11 +831,14 @@ Current approved files:
 | Pilot launch rule | Covered | `SOP.md`, `Master.md`, `campaign-flowchart.md` |
 | Monitoring, pause, and scale rules | Covered | `SOP.md`, `Master.md`, `campaign-flowchart.md` |
 | Reply management categories | Covered at SOP level | `SOP.md`, `Brand-voice.md` |
+| Positive reply lead report and response variants | Covered | `positive-response-lead-report-agent.md`, `Master.md` |
 | Reporting and campaign closing | Covered at SOP level | `SOP.md` |
 
 ### Areas That Are Covered but Could Be Stronger
 
-The current files are enough for a working agent, but some SOP areas are broad inside `SOP.md`. For a stronger agent, these areas may need separate detailed files later:
+The current files are enough for a working agent. The SOP, Master, ICP, data enrichment, brand voice, B2B service routing, campaign flowchart, and positive-response agent now cover the main campaign process.
+
+Some SOP areas are still broad inside `SOP.md`. For a stronger agent, these areas may need separate detailed files later:
 
 - Email infrastructure setup
 - Lead collection process
@@ -841,7 +847,20 @@ The current files are enough for a working agent, but some SOP areas are broad i
 - Email sequence QA
 - Instantly campaign setup
 - Monitoring and reporting
-- Reply management
+- Full reply management for all reply types, not only positive replies
+
+### Current Coverage Summary
+
+| Current File | What It Covers for the SOP | Status |
+|---|---|---|
+| `SOP.md` | Main operational process from domain setup to campaign closing | Core file ready |
+| `Master.md` | Top-level workflow and how all instruction files connect | Core file ready |
+| `Brand-voice.md` | Email tone, CTAs, subject lines, service positioning, reply style | Core file ready |
+| `b2b-cold-email-service-routing.md` | B2B cold email service scope, service tiers, deliverability-safe positioning, tool stack | Core file ready |
+| `data-enrichment.md` | Data cleaning, duplicate checks, generic emails, company cleanup, row-wise analysis | Core file ready |
+| `ICP.md` | ICP logic, geography, company size, business type, service fit, match scoring | Core file ready |
+| `campaign-flowchart.md` | Campaign step-by-step flow from setup to launch and monitoring | Core file ready |
+| `positive-response-lead-report-agent.md` | Positive reply detection, portfolio building, sequence attribution, response variants, Telegram reporting | Core file ready |
 
 ### Suggested Future `.md` Files
 
@@ -871,7 +890,13 @@ Recommended files:
    - For first 3 days monitoring, daily metrics, pause rules, scale rules, weekly reviews, final reporting, and campaign closing.
 
 8. `Reply-Management.md`
-   - For interested replies, pricing replies, unsubscribe replies, wrong person replies, out-of-office replies, and suppression actions.
+   - For all reply types, including interested, pricing, unsubscribe, wrong person, referral, out-of-office, auto-reply, negative replies, and suppression actions.
+
+9. `Telegram-Notification-Setup.md`
+   - For Telegram bot token, chat ID, alert format, notification routing, and positive reply alert testing.
+
+10. `Campaign-Performance-Database.md`
+   - For storing winning sequences, winning steps, reply reasons, positive reply source, meetings booked, and campaign learning history.
 
 ### Priority Order for Future File Creation
 
@@ -883,8 +908,10 @@ If only a few files are created first, use this order:
 4. `Instantly-Setup.md`
 5. `Monitoring-and-Reporting.md`
 6. `Reply-Management.md`
-7. `Lead-Collection.md`
-8. `Segmentation-and-File-QA.md`
+7. `Telegram-Notification-Setup.md`
+8. `Campaign-Performance-Database.md`
+9. `Lead-Collection.md`
+10. `Segmentation-and-File-QA.md`
 
 ### Final Audit Rule
 
