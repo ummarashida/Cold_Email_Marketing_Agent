@@ -7,8 +7,10 @@ This master file combines the main workflow from the core instruction files:
 - [ICP Analysis](ICP.md)
 - [Campaign Launch Flowchart](campaign-flowchart.md)
 - [Brand Voice & Cold Email Messaging System](Brand-voice.md)
+- [B2B Cold Email Service Routing](b2b-cold-email-service-routing.md)
+- [Positive Response Lead Report Agent](positive-response-lead-report-agent.md)
 
-The purpose of this document is to give a clear top-level view of how domain setup, raw prospect data, enrichment, analysis, brand voice, approval, launch, monitoring, and reporting work together for Accord Tech Solutions cold email campaigns.
+The purpose of this document is to give a clear top-level view of how domain setup, raw prospect data, enrichment, analysis, brand voice, B2B service routing, approval, launch, positive reply handling, monitoring, and reporting work together for Accord Tech Solutions cold email campaigns.
 
 ---
 
@@ -30,6 +32,7 @@ Internal Approval
 Instantly Campaign Setup
 Pilot Campaign Launch
 Campaign Monitoring
+Positive Reply Handling
 Reporting and Optimization
 Campaign Closing
 ```
@@ -430,7 +433,38 @@ Brand-voice.md
 
 ---
 
-## 14. SOP and Email Infrastructure Overview
+## 14. B2B Cold Email Service Routing Overview
+
+The B2B cold email service routing file defines how ATS should position cold email as a service and how the agent should route requests around service scope.
+
+The agent should use this file when deciding:
+
+- Whether the request is about B2B cold outreach
+- Which service tier fits the situation
+- Whether the campaign should focus on meetings, replies, pipeline, or deliverability
+- Whether the request is out of scope
+- Which tools and service approach should be recommended
+
+Core B2B cold email rules:
+
+- Lead with outcomes, not email volume
+- Focus on booked meetings, replies, and pipeline opportunities
+- Use secondary sending domains, not the primary domain
+- Avoid spray-and-pray outreach
+- Use signal-based personalization
+- Keep cold emails short, plain text, and reply-focused
+- Avoid buying unverified lists
+- Protect sender reputation and deliverability
+
+The full routing and service context is defined in:
+
+```text
+b2b-cold-email-service-routing.md
+```
+
+---
+
+## 15. SOP and Email Infrastructure Overview
 
 Before campaign setup, the SOP must be followed for domain, inbox, DNS, tracking, warmup, sending limit, upload, QA, launch, monitoring, and reporting requirements.
 
@@ -460,7 +494,7 @@ Only approved and healthy sending accounts should be used.
 
 ---
 
-## 15. Email Sequence Overview
+## 16. Email Sequence Overview
 
 The email sequence should be written after the service angle and pain points are confirmed.
 
@@ -494,7 +528,7 @@ Before finalizing, confirm:
 
 ---
 
-## 16. Internal Approval Overview
+## 17. Internal Approval Overview
 
 Before launch, the final campaign plan must be approved by the CEO and ED.
 
@@ -516,7 +550,7 @@ The campaign should not launch until the sequence, target service, prospect list
 
 ---
 
-## 17. Instantly Campaign Setup Overview
+## 18. Instantly Campaign Setup Overview
 
 After approval, the campaign should be set up in Instantly or the approved campaign platform.
 
@@ -541,7 +575,33 @@ Setup should include:
 
 ---
 
-## 18. Final Output Columns
+## 19. Positive Reply Handling Overview
+
+When a campaign gets a positive reply, the positive-response lead report agent should be used.
+
+The agent should:
+
+- Stop the sequence immediately for that lead
+- Classify the reply as positive, neutral, negative, out-of-office, wrong person, or unsubscribe
+- Build a one-page company and person portfolio
+- Report which campaign, sequence step, subject, and body earned the reply
+- Analyze the prospect's intent
+- Draft 2-3 response variants
+- Send or prepare a Telegram notification
+- Mark unverifiable fields as `unknown`
+- Escalate low-confidence classification for human review
+
+Positive reply handling must use verified list data and enrichment only. The agent must never invent company or person facts.
+
+The full process is defined in:
+
+```text
+positive-response-lead-report-agent.md
+```
+
+---
+
+## 20. Final Output Columns
 
 The final enriched and analyzed campaign file should include:
 
@@ -581,7 +641,7 @@ Remarks
 
 ---
 
-## 19. Final Campaign Launch Checklist
+## 21. Final Campaign Launch Checklist
 
 Before launching, confirm:
 
@@ -610,7 +670,7 @@ Before launching, confirm:
 
 ---
 
-## 20. Monitoring and Post-Launch Overview
+## 22. Monitoring and Post-Launch Overview
 
 After launch, the campaign must be monitored according to the SOP.
 
@@ -626,6 +686,8 @@ Track:
 - Performance by segment
 - Performance by inbox
 - Performance by campaign step
+- Positive reply source sequence
+- Booked meeting opportunity
 
 Key thresholds:
 
@@ -642,12 +704,12 @@ Only scale after the pilot batch performs well and inbox health remains stable.
 
 ---
 
-## 21. Final Rule
+## 23. Final Rule
 
 Every campaign should move through the full process:
 
 ```text
-Setup Infrastructure -> Collect -> Clean -> Enrich -> Analyze -> Match -> Align Voice -> Write -> QA -> Approve -> Setup -> Pilot Launch -> Monitor -> Scale -> Report -> Close
+Setup Infrastructure -> Collect -> Clean -> Enrich -> Analyze -> Match -> Route Service -> Align Voice -> Write -> QA -> Approve -> Setup -> Pilot Launch -> Monitor -> Handle Positive Replies -> Scale -> Report -> Close
 ```
 
 The final output should clearly show:
@@ -660,6 +722,8 @@ What pain point they may have
 Which ATS service fits them best
 What cold email angle should be used
 Whether the message follows the ATS brand voice
+Which B2B cold email service route applies
+Which sequence step created any positive reply
 Whether they are ready for campaign launch
 ```
 
