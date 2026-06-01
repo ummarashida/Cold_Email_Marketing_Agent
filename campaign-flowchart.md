@@ -1,6 +1,28 @@
 # Campaign Launch Flowchart
 
-## 01. Raw Data Collection
+## 01. Domain and Inbox Setup
+
+Before collecting or uploading campaign data, confirm the campaign has approved sending infrastructure.
+
+Check:
+
+- Domain approval received
+- SPF, DKIM, DMARC, and CNAME configured
+- Custom tracking domain verified
+- Inboxes created and active
+- Warmup enabled
+- Sending limits configured
+- Email Infrastructure Tracker updated
+
+Use the full process in:
+
+```text
+SOP.md
+```
+
+---
+
+## 02. Raw Data Collection
 
 Before launching any cold email campaign, the first step is to collect raw prospect data based on our campaign criteria.
 
@@ -13,12 +35,13 @@ The raw data should match our target requirements, such as:
 - Decision-maker role
 - Service relevance
 - ICP criteria
+- Employee size of 50-200 where applicable
 
 The goal is to collect a prospect list that is relevant to the campaign objective.
 
 ---
 
-## 02. Data Enrichment
+## 03. Data Enrichment
 
 After collecting the raw data, the full file must be processed under the Data Enrichment workflow.
 
@@ -44,7 +67,30 @@ The final enriched file should be clean, accurate, and ready for campaign analys
 
 ---
 
-## 03. Email Infrastructure Selection
+## 04. Verification, Suppression, and File QA
+
+Before campaign writing or upload, verify the list and remove risky records.
+
+Check:
+
+- Invalid emails removed
+- Risky and unknown emails moved to quarantine
+- Generic emails removed or marked
+- Duplicate contacts removed
+- Duplicate companies handled
+- Suppression list checked
+- CSV file has no blank required fields
+
+Use:
+
+```text
+SOP.md
+data-enrichment.md
+```
+
+---
+
+## 05. Email Infrastructure Selection
 
 Before campaign setup, we need to check our email infrastructure.
 
@@ -62,7 +108,7 @@ After checking everything, we need to select the best available email accounts f
 
 ---
 
-## 04. Campaign Service Fit Analysis
+## 06. Campaign Service Fit Analysis
 
 After data enrichment, we need to analyze which Accord Tech Solutions service is the best fit for the prospect list.
 
@@ -78,7 +124,7 @@ The goal is to choose the most relevant service angle before writing the email s
 
 ---
 
-## 05. Pain Point Analysis
+## 07. Pain Point Analysis
 
 Based on the enriched data, we need to identify the main pain points of the target companies.
 
@@ -105,7 +151,39 @@ If the target companies are B2C brands, possible pain points may be:
 
 ---
 
-## 06. Email Sequence Writing
+## 08. Brand Voice Alignment
+
+Before writing or approving the email sequence, confirm the campaign follows the ATS brand voice.
+
+The message should be:
+
+- Simple
+- Human
+- Professional
+- Relevant
+- Reply-focused
+- Focused on one pain point
+- Focused on one service angle
+- Built around a soft CTA
+
+Avoid:
+
+- Clickbait subject lines
+- Spammy wording
+- Overpromising
+- Hard meeting CTAs in the first email
+- Generic compliments
+
+Use the full guide in:
+
+```text
+Brand-voice.md
+SOP.md
+```
+
+---
+
+## 09. Email Sequence Writing
 
 After selecting the service angle and identifying the pain points, the email sequence should be written.
 
@@ -127,18 +205,23 @@ The email copy should be:
 - Focused on one main pain point
 - Focused on one clear service offer
 - Written for replies, not just opens
+- Aligned with the ATS brand voice
 
 The sequence should include:
 
 - Step 1 email
 - Step 2 follow-up
 - Step 3 follow-up
+- Breakup email if needed
 - Subject lines
 - A/B variations if needed
+- Token fallback checks
+- Opener QA
+- Link and UTM QA
 
 ---
 
-## 07. Internal Approval
+## 10. Internal Approval
 
 Before launching the campaign, the final campaign plan must be approved by the CEO and ED.
 
@@ -150,15 +233,17 @@ Approval should be taken for:
 - Selected ATS service
 - Pain point angle
 - Email sequence
+- Brand voice alignment
 - Subject lines
 - Campaign strategy
 - Sending infrastructure
+- SOP launch readiness
 
-The campaign should not be launched until the sequence, target service, and prospect list are approved.
+The campaign should not be launched until the sequence, target service, prospect list, infrastructure, brand voice alignment, and SOP readiness are approved.
 
 ---
 
-## 08. Instantly Campaign Setup
+## 11. Instantly Campaign Setup
 
 After approval, the campaign should be set up in Instantly.
 
@@ -176,10 +261,56 @@ The setup process should include:
 - Checking tracking settings
 - Checking campaign safety settings
 - Testing the campaign before launch
+- Testing personalization token fallbacks
+- Testing links and UTMs
+- Confirming unsubscribe setup
 
 ---
 
-## 09. Final Campaign Launch Checklist
+## 12. Pilot Launch
+
+Start with:
+
+```text
+10-15% of the list
+```
+
+Review the pilot before scaling.
+
+Scale only if:
+
+- Bounce rate stays below 2%
+- Complaint rate stays below 0.1%
+- Replies are relevant
+- Inboxes remain stable
+
+---
+
+## 13. Monitoring and Reporting
+
+After launch, monitor:
+
+- Open rate
+- Reply rate
+- Positive replies
+- Bounce rate
+- Spam complaints
+- Unsubscribes
+- Meetings booked
+- Segment performance
+- Inbox performance
+- Campaign step performance
+
+Use:
+
+```text
+SOP.md
+Brand-voice.md
+```
+
+---
+
+## 14. Final Campaign Launch Checklist
 
 Before launching, check:
 
@@ -190,21 +321,28 @@ Before launching, check:
 - ICP analysis completed
 - Pain points identified
 - ATS service fit confirmed
+- Brand voice alignment checked
 - Email infrastructure selected
 - Sequence written
+- Personalization fallback tested
+- 20+ custom openers reviewed
+- Links and UTMs tested
 - CEO and ED approval received
 - Instantly campaign setup completed
+- Pilot batch plan confirmed
 - Test email checked
 - Campaign settings reviewed
+- Suppression list checked
+- Monitoring process ready
 
 ---
 
-## 10. Final Instruction
+## 15. Final Instruction
 
 Every cold email campaign must follow this process step by step.
 
 The campaign should not be launched only with raw data.
 
-First, the prospect list must be collected, enriched, analyzed, matched with the correct ATS service, connected with the right pain points, and approved internally.
+First, the infrastructure must be ready. Then the prospect list must be collected, enriched, verified, analyzed, matched with the correct ATS service, connected with the right pain points, written in the ATS brand voice, checked through QA, and approved internally.
 
-Only after completing these steps should the campaign be set up and launched in Instantly.
+Only after completing these steps should the campaign be set up, pilot-launched, monitored, scaled, reported, and closed.

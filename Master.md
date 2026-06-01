@@ -1,13 +1,14 @@
 # Cold Email Marketing Agent - Master Overview
 
-This master file combines the main workflow from the four core instruction files:
+This master file combines the main workflow from the core instruction files:
 
+- [Cold Email Marketing SOP](SOP.md)
 - [Data Enrichment](data-enrichment.md)
 - [ICP Analysis](ICP.md)
 - [Campaign Launch Flowchart](campaign-flowchart.md)
 - [Brand Voice & Cold Email Messaging System](Brand-voice.md)
 
-The purpose of this document is to give a clear top-level view of how raw prospect data becomes a clean, analyzed, approved, brand-aligned, and campaign-ready cold email list for Accord Tech Solutions.
+The purpose of this document is to give a clear top-level view of how domain setup, raw prospect data, enrichment, analysis, brand voice, approval, launch, monitoring, and reporting work together for Accord Tech Solutions cold email campaigns.
 
 ---
 
@@ -16,6 +17,7 @@ The purpose of this document is to give a clear top-level view of how raw prospe
 Every cold email campaign should follow this order:
 
 ```text
+Domain and Inbox Setup
 Raw Data Collection
 Data Enrichment
 ICP Analysis
@@ -26,10 +28,13 @@ Email Infrastructure Selection
 Email Sequence Writing
 Internal Approval
 Instantly Campaign Setup
-Final Campaign Launch
+Pilot Campaign Launch
+Campaign Monitoring
+Reporting and Optimization
+Campaign Closing
 ```
 
-The campaign should not be launched directly from raw data. The data must be cleaned, enriched, analyzed, matched with the right Accord Tech Solutions service, written in the approved ATS brand voice, and approved before launch.
+The campaign should not be launched directly from raw data. The data must be cleaned, enriched, analyzed, matched with the right Accord Tech Solutions service, written in the approved ATS brand voice, checked against the SOP, and approved before launch.
 
 ---
 
@@ -165,8 +170,7 @@ For Accord Tech Solutions, ICP analysis identifies which companies are the best 
 Preferred company size:
 
 ```text
-50-100 employees
-100-200 employees
+50-200 employees
 ```
 
 Priority business types:
@@ -426,9 +430,17 @@ Brand-voice.md
 
 ---
 
-## 14. Email Infrastructure Overview
+## 14. SOP and Email Infrastructure Overview
 
-Before campaign setup, email infrastructure must be checked.
+Before campaign setup, the SOP must be followed for domain, inbox, DNS, tracking, warmup, sending limit, upload, QA, launch, monitoring, and reporting requirements.
+
+The full operational process is defined in:
+
+```text
+SOP.md
+```
+
+Email infrastructure must be checked before launch.
 
 Review:
 
@@ -439,6 +451,10 @@ Review:
 - Healthy mailboxes
 - Mailboxes with deliverability issues
 - Mailboxes suitable for the new campaign
+- SPF, DKIM, DMARC, and CNAME status
+- Custom tracking domain status
+- Warmup status
+- Campaign sending limits
 
 Only approved and healthy sending accounts should be used.
 
@@ -494,14 +510,15 @@ Approval should cover:
 - Subject lines
 - Campaign strategy
 - Sending infrastructure
+- SOP launch readiness
 
-The campaign should not launch until the sequence, target service, prospect list, and brand voice alignment are approved.
+The campaign should not launch until the sequence, target service, prospect list, brand voice alignment, infrastructure, and SOP launch readiness are approved.
 
 ---
 
 ## 17. Instantly Campaign Setup Overview
 
-After approval, the campaign should be set up in Instantly.
+After approval, the campaign should be set up in Instantly or the approved campaign platform.
 
 Setup should include:
 
@@ -517,6 +534,10 @@ Setup should include:
 - Checking tracking settings
 - Checking campaign safety settings
 - Testing the campaign before launch
+- Testing personalization token fallbacks
+- Reviewing at least 20 custom openers
+- Testing all links and UTMs
+- Launching a 10-15% pilot batch first
 
 ---
 
@@ -576,19 +597,57 @@ Before launching, confirm:
 - Brand voice alignment checked
 - Email infrastructure selected
 - Sequence written
+- Personalization fallback tested
+- 20+ random opener rows reviewed
+- Links and UTMs tested
 - CEO and ED approval received
 - Instantly campaign setup completed
+- Pilot batch plan confirmed
 - Test email checked
 - Campaign settings reviewed
+- Suppression list process ready
+- Monitoring and reporting process ready
 
 ---
 
-## 20. Final Rule
+## 20. Monitoring and Post-Launch Overview
+
+After launch, the campaign must be monitored according to the SOP.
+
+Track:
+
+- Open rate
+- Reply rate
+- Positive reply rate
+- Bounce rate
+- Spam complaints
+- Unsubscribes
+- Meetings booked
+- Performance by segment
+- Performance by inbox
+- Performance by campaign step
+
+Key thresholds:
+
+```text
+Open rate goal: 60%+
+Reply rate goal: 3%+
+Bounce rate limit: below 2%
+Complaint rate limit before scaling: below 0.1%
+```
+
+Pause the campaign if bounce rate rises, spam complaints increase, open rate drops suddenly, wrong leads are uploaded, personalization errors appear, or one inbox starts performing badly.
+
+Only scale after the pilot batch performs well and inbox health remains stable.
+
+---
+
+## 21. Final Rule
 
 Every campaign should move through the full process:
 
 ```text
-Collect -> Clean -> Enrich -> Analyze -> Match -> Align Voice -> Write -> Approve -> Setup -> Launch
+Setup Infrastructure -> Collect -> Clean -> Enrich -> Analyze -> Match -> Align Voice -> Write -> QA -> Approve -> Setup -> Pilot Launch -> Monitor -> Scale -> Report -> Close
 ```
 
 The final output should clearly show:
