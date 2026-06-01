@@ -1,12 +1,13 @@
 # Cold Email Marketing Agent - Master Overview
 
-This master file combines the main workflow from the three core instruction files:
+This master file combines the main workflow from the four core instruction files:
 
 - [Data Enrichment](data-enrichment.md)
 - [ICP Analysis](ICP.md)
 - [Campaign Launch Flowchart](campaign-flowchart.md)
+- [Brand Voice & Cold Email Messaging System](Brand-voice.md)
 
-The purpose of this document is to give a clear top-level view of how raw prospect data becomes a clean, analyzed, approved, and campaign-ready cold email list for Accord Tech Solutions.
+The purpose of this document is to give a clear top-level view of how raw prospect data becomes a clean, analyzed, approved, brand-aligned, and campaign-ready cold email list for Accord Tech Solutions.
 
 ---
 
@@ -20,6 +21,7 @@ Data Enrichment
 ICP Analysis
 Service Fit Analysis
 Pain Point Analysis
+Brand Voice Alignment
 Email Infrastructure Selection
 Email Sequence Writing
 Internal Approval
@@ -27,7 +29,7 @@ Instantly Campaign Setup
 Final Campaign Launch
 ```
 
-The campaign should not be launched directly from raw data. The data must be cleaned, enriched, analyzed, matched with the right Accord Tech Solutions service, and approved before launch.
+The campaign should not be launched directly from raw data. The data must be cleaned, enriched, analyzed, matched with the right Accord Tech Solutions service, written in the approved ATS brand voice, and approved before launch.
 
 ---
 
@@ -377,7 +379,54 @@ The angle should be simple, human, and relevant.
 
 ---
 
-## 13. Email Infrastructure Overview
+## 13. Brand Voice and Messaging Overview
+
+Before writing any cold email sequence, the message must follow the ATS brand voice.
+
+ATS should sound:
+
+- Simple
+- Human
+- Professional
+- Helpful
+- Direct
+- Relevant
+- Reply-focused
+
+ATS should not sound like:
+
+- A spammy lead generation vendor
+- A hype-heavy digital marketing agency
+- A robotic automation tool
+- A pushy sales rep
+- A company promising overnight results
+- A generic agency selling every service to everyone
+
+Every ATS message should:
+
+- Start with the prospect, not ATS
+- Focus on one clear pain point
+- Use one service angle per email
+- Keep the message short and easy to read
+- Use a soft CTA
+- Avoid hype, spam words, and overpromising
+- Create replies before asking for meetings
+
+Core brand rule:
+
+```text
+Sound human. Stay relevant. Focus on the prospect. Create replies.
+```
+
+The full writing rules, service positioning, CTAs, subject line guidance, examples, and reply handling voice are defined in:
+
+```text
+Brand-voice.md
+```
+
+---
+
+## 14. Email Infrastructure Overview
 
 Before campaign setup, email infrastructure must be checked.
 
@@ -395,7 +444,7 @@ Only approved and healthy sending accounts should be used.
 
 ---
 
-## 14. Email Sequence Overview
+## 15. Email Sequence Overview
 
 The email sequence should be written after the service angle and pain points are confirmed.
 
@@ -408,6 +457,7 @@ The email copy should be:
 - Focused on one main pain point
 - Focused on one clear service offer
 - Written for replies, not just opens
+- Aligned with the ATS brand voice
 
 The sequence should include:
 
@@ -417,9 +467,18 @@ The sequence should include:
 - Subject lines
 - A/B variations if needed
 
+Before finalizing, confirm:
+
+- The email is under 110 words where possible
+- The first line is relevant
+- The CTA is soft and easy to answer
+- The message avoids spammy phrases
+- The email does not ask for a meeting too early
+- The prospect's pain comes before the ATS service introduction
+
 ---
 
-## 15. Internal Approval Overview
+## 16. Internal Approval Overview
 
 Before launch, the final campaign plan must be approved by the CEO and ED.
 
@@ -431,15 +490,16 @@ Approval should cover:
 - Selected ATS service
 - Pain point angle
 - Email sequence
+- Brand voice alignment
 - Subject lines
 - Campaign strategy
 - Sending infrastructure
 
-The campaign should not launch until the sequence, target service, and prospect list are approved.
+The campaign should not launch until the sequence, target service, prospect list, and brand voice alignment are approved.
 
 ---
 
-## 16. Instantly Campaign Setup Overview
+## 17. Instantly Campaign Setup Overview
 
 After approval, the campaign should be set up in Instantly.
 
@@ -460,7 +520,7 @@ Setup should include:
 
 ---
 
-## 17. Final Output Columns
+## 18. Final Output Columns
 
 The final enriched and analyzed campaign file should include:
 
@@ -491,6 +551,7 @@ Secondary ATS Service Fit
 Service Fit Reason
 Cold Email Angle
 Personalization Note
+Brand Voice Check
 ICP Match
 ICP Match Reason
 Data Confidence
@@ -499,7 +560,7 @@ Remarks
 
 ---
 
-## 18. Final Campaign Launch Checklist
+## 19. Final Campaign Launch Checklist
 
 Before launching, confirm:
 
@@ -512,6 +573,7 @@ Before launching, confirm:
 - Target geography checked
 - Pain points identified
 - ATS service fit confirmed
+- Brand voice alignment checked
 - Email infrastructure selected
 - Sequence written
 - CEO and ED approval received
@@ -521,12 +583,12 @@ Before launching, confirm:
 
 ---
 
-## 19. Final Rule
+## 20. Final Rule
 
 Every campaign should move through the full process:
 
 ```text
-Collect -> Clean -> Enrich -> Analyze -> Match -> Write -> Approve -> Setup -> Launch
+Collect -> Clean -> Enrich -> Analyze -> Match -> Align Voice -> Write -> Approve -> Setup -> Launch
 ```
 
 The final output should clearly show:
@@ -538,6 +600,7 @@ Whether they match the ICP
 What pain point they may have
 Which ATS service fits them best
 What cold email angle should be used
+Whether the message follows the ATS brand voice
 Whether they are ready for campaign launch
 ```
 
