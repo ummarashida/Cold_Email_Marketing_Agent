@@ -9,6 +9,16 @@ This master file combines the main workflow from the core instruction files:
 - [Brand Voice & Cold Email Messaging System](Brand-voice.md)
 - [B2B Cold Email Service Routing](b2b-cold-email-service-routing.md)
 - [Positive Response Lead Report Agent](positive-response-lead-report-agent.md)
+- [Email Infrastructure Setup](Email-Infrastructure.md)
+- [Verification and Suppression Handling](Verification-and-Suppression.md)
+- [Email Sequence QA](Email-Sequence-QA.md)
+- [Instantly Campaign Setup](Instantly-Setup.md)
+- [Monitoring and Reporting](Monitoring-and-Reporting.md)
+- [Reply Management](Reply-Management.md)
+- [Telegram Notification Setup](Telegram-Notification-Setup.md)
+- [Campaign Performance Database](Campaign-Performance-Database.md)
+- [Lead Collection](Lead-Collection.md)
+- [Segmentation and File QA](Segmentation-and-File-QA.md)
 
 The purpose of this document is to give a clear top-level view of how domain setup, raw prospect data, enrichment, analysis, brand voice, B2B service routing, approval, launch, positive reply handling, monitoring, and reporting work together for Accord Tech Solutions cold email campaigns.
 

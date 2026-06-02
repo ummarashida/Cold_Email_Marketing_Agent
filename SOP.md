@@ -799,7 +799,7 @@ Do not launch a campaign until the list, infrastructure, copy, tracking, unsubsc
 
 ## SOP Coverage Audit
 
-This section shows which SOP requirements are already covered by the current `.md` files and which supporting files may be useful to create later.
+This section shows which SOP requirements are covered by the current `.md` files and which support files should be used for detailed agent instructions.
 
 Current approved files:
 
@@ -811,6 +811,16 @@ Current approved files:
 - `ICP.md`
 - `campaign-flowchart.md`
 - `positive-response-lead-report-agent.md`
+- `Email-Infrastructure.md`
+- `Verification-and-Suppression.md`
+- `Email-Sequence-QA.md`
+- `Instantly-Setup.md`
+- `Monitoring-and-Reporting.md`
+- `Reply-Management.md`
+- `Telegram-Notification-Setup.md`
+- `Campaign-Performance-Database.md`
+- `Lead-Collection.md`
+- `Segmentation-and-File-QA.md`
 
 ### Already Covered in Current Files
 
@@ -824,30 +834,36 @@ Current approved files:
 | Employee size rule | Covered as 50-200 employees | `SOP.md`, `ICP.md`, `Master.md` |
 | Brand voice and cold email style | Covered | `Brand-voice.md`, `SOP.md` |
 | Subject line and CTA rules | Covered | `Brand-voice.md`, `SOP.md` |
-| Email verification and generic email removal | Covered at SOP level | `SOP.md`, `data-enrichment.md` |
-| Suppression list process | Covered at SOP level | `SOP.md` |
-| Segmentation and file preparation | Covered at SOP level | `SOP.md`, `Master.md` |
-| Instantly campaign setup | Covered at SOP level | `SOP.md`, `campaign-flowchart.md` |
+| Email infrastructure setup | Covered in detail | `Email-Infrastructure.md`, `SOP.md` |
+| Lead collection process | Covered in detail | `Lead-Collection.md`, `SOP.md` |
+| Email verification and generic email removal | Covered in detail | `Verification-and-Suppression.md`, `data-enrichment.md`, `SOP.md` |
+| Suppression list process | Covered in detail | `Verification-and-Suppression.md`, `SOP.md` |
+| Segmentation and file preparation | Covered in detail | `Segmentation-and-File-QA.md`, `SOP.md`, `Master.md` |
+| Email sequence QA | Covered in detail | `Email-Sequence-QA.md`, `Brand-voice.md`, `SOP.md` |
+| Instantly campaign setup | Covered in detail | `Instantly-Setup.md`, `SOP.md`, `campaign-flowchart.md` |
 | Pilot launch rule | Covered | `SOP.md`, `Master.md`, `campaign-flowchart.md` |
-| Monitoring, pause, and scale rules | Covered | `SOP.md`, `Master.md`, `campaign-flowchart.md` |
-| Reply management categories | Covered at SOP level | `SOP.md`, `Brand-voice.md` |
+| Monitoring, pause, and scale rules | Covered in detail | `Monitoring-and-Reporting.md`, `SOP.md`, `Master.md`, `campaign-flowchart.md` |
+| Reply management categories | Covered in detail | `Reply-Management.md`, `SOP.md`, `Brand-voice.md` |
 | Positive reply lead report and response variants | Covered | `positive-response-lead-report-agent.md`, `Master.md` |
-| Reporting and campaign closing | Covered at SOP level | `SOP.md` |
+| Reporting and campaign closing | Covered in detail | `Monitoring-and-Reporting.md`, `Campaign-Performance-Database.md`, `SOP.md` |
+| Telegram reply notification process | Covered in detail | `Telegram-Notification-Setup.md`, `positive-response-lead-report-agent.md` |
 
-### Areas That Are Covered but Could Be Stronger
+### Strengthened Support Files
 
-The current files are enough for a working agent. The SOP, Master, ICP, data enrichment, brand voice, B2B service routing, campaign flowchart, and positive-response agent now cover the main campaign process.
+The SOP, Master, ICP, data enrichment, brand voice, B2B service routing, campaign flowchart, positive-response agent, and the support files now cover the full campaign process in more detail.
 
-Some SOP areas are still broad inside `SOP.md`. For a stronger agent, these areas may need separate detailed files later:
+Use these support files when the agent needs detailed operational guidance:
 
-- Email infrastructure setup
-- Lead collection process
-- Email verification and suppression handling
-- Segmentation and file QA
-- Email sequence QA
-- Instantly campaign setup
-- Monitoring and reporting
-- Full reply management for all reply types, not only positive replies
+- `Email-Infrastructure.md`
+- `Verification-and-Suppression.md`
+- `Email-Sequence-QA.md`
+- `Instantly-Setup.md`
+- `Monitoring-and-Reporting.md`
+- `Reply-Management.md`
+- `Telegram-Notification-Setup.md`
+- `Campaign-Performance-Database.md`
+- `Lead-Collection.md`
+- `Segmentation-and-File-QA.md`
 
 ### Current Coverage Summary
 
@@ -861,46 +877,20 @@ Some SOP areas are still broad inside `SOP.md`. For a stronger agent, these area
 | `ICP.md` | ICP logic, geography, company size, business type, service fit, match scoring | Core file ready |
 | `campaign-flowchart.md` | Campaign step-by-step flow from setup to launch and monitoring | Core file ready |
 | `positive-response-lead-report-agent.md` | Positive reply detection, portfolio building, sequence attribution, response variants, Telegram reporting | Core file ready |
+| `Email-Infrastructure.md` | Domain buying, DNS, SPF, DKIM, DMARC, tracking domains, inbox warmup, and sending limits | Support file ready |
+| `Verification-and-Suppression.md` | Email verification, invalid/risky/unknown handling, generic email removal, duplicate logs, bounce target, and suppression list updates | Support file ready |
+| `Email-Sequence-QA.md` | Subject lines, body length, Instantly house format, fallback tokens, opener QA, link/UTM QA, segment-specific copy, and final copy approval | Support file ready |
+| `Instantly-Setup.md` | CSV upload, field mapping, sequence setup, schedules, stop-on-reply, unsubscribe settings, test emails, and pilot launch setup | Support file ready |
+| `Monitoring-and-Reporting.md` | First 3 days monitoring, daily metrics, pause rules, scale rules, weekly reviews, final reporting, and campaign closing | Support file ready |
+| `Reply-Management.md` | Interested, pricing, unsubscribe, wrong person, referral, out-of-office, auto-reply, negative replies, and suppression actions | Support file ready |
+| `Telegram-Notification-Setup.md` | Telegram alert setup, chat ID, alert format, notification routing, and positive reply alert testing | Support file ready |
+| `Campaign-Performance-Database.md` | Winning sequences, sequence steps, reply reasons, positive reply source, meetings booked, and campaign learning history | Support file ready |
+| `Lead-Collection.md` | Apollo filters, bot sources, coding team process, market research handoff, and raw data field requirements | Support file ready |
+| `Segmentation-and-File-QA.md` | Segment rules, ICP gate, CSV export checks, blank field checks, company name cleanup, and approval before upload | Support file ready |
 
-### Suggested Future `.md` Files
+### Support File Usage Order
 
-Do not create these files unless approved by the user.
-
-Recommended files:
-
-1. `Email-Infrastructure.md`
-   - For domain buying, DNS setup, SPF, DKIM, DMARC, CNAME, custom tracking domain, inbox warmup, and sending limits.
-
-2. `Lead-Collection.md`
-   - For Apollo filters, bot sources, coding team process, market research handoff, and raw data field requirements.
-
-3. `Verification-and-Suppression.md`
-   - For email verifier rules, invalid/risky/unknown handling, generic email removal, duplicate logs, bounce target, and suppression list updates.
-
-4. `Segmentation-and-File-QA.md`
-   - For segment rules, ICP gate, CSV export checks, blank field checks, company name cleanup, and approval before upload.
-
-5. `Email-Sequence-QA.md`
-   - For subject line checks, body length, fallback tokens, opener QA, link/UTM QA, segment-specific copy, and final copy approval.
-
-6. `Instantly-Setup.md`
-   - For uploading CSVs, mapping fields, adding sequences, schedules, stop-on-reply, unsubscribe settings, test emails, and pilot launch setup.
-
-7. `Monitoring-and-Reporting.md`
-   - For first 3 days monitoring, daily metrics, pause rules, scale rules, weekly reviews, final reporting, and campaign closing.
-
-8. `Reply-Management.md`
-   - For all reply types, including interested, pricing, unsubscribe, wrong person, referral, out-of-office, auto-reply, negative replies, and suppression actions.
-
-9. `Telegram-Notification-Setup.md`
-   - For Telegram bot token, chat ID, alert format, notification routing, and positive reply alert testing.
-
-10. `Campaign-Performance-Database.md`
-   - For storing winning sequences, winning steps, reply reasons, positive reply source, meetings booked, and campaign learning history.
-
-### Priority Order for Future File Creation
-
-If only a few files are created first, use this order:
+When building or auditing the full agent, use this order:
 
 1. `Email-Infrastructure.md`
 2. `Verification-and-Suppression.md`
@@ -915,6 +905,6 @@ If only a few files are created first, use this order:
 
 ### Final Audit Rule
 
-The current SOP is usable now. The suggested files are optional support files that would make the agent more detailed, safer, and easier to control.
+The current SOP and support files are ready to guide a higher-quality cold email marketing agent.
 
-No new `.md` file should be created unless the user gives clear permission.
+Create additional `.md` files only when a new gap is identified and the user gives clear permission.
